@@ -1,0 +1,37 @@
+[tool.ruff]
+# Exclude a variety of common virtual environment directories
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".hg",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "venv",
+    "venv_*",
+    "app/migrations/*",
+]
+
+# Same as Black.
+line-length = 88
+
+# Assume Python 3.10, which is used in the Dockerfile
+target-version = "py310"
+
+[tool.ruff.lint]
+# Enable the same rules as flake8 (E, F)
+# E: pycodestyle errors
+# F: pyflakes errors
+select = ["E", "F"]

@@ -1,0 +1,7 @@
+venv*
+__pycache__/
+*.pyc
+.DS_Store
+mysql_data/
+db.sqlite3
+soluciones_ejercicios.md
