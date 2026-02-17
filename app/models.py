@@ -28,8 +28,7 @@ class Pizza(models.Model):
 
     def __str__(self):
         return self.nombre
-<<<<<<< HEAD
-=======
+
 class Proveedor(models.Model):
     nombre = models.CharField(max_length=100)
     email =models.EmailField(unique=True)
@@ -40,4 +39,4 @@ class Proveedor(models.Model):
         return self.nombre
 
     #mysql -u user_curso -p contraseña: passcurso
->>>>>>> sesion2
+
