@@ -24,17 +24,14 @@ if "%command%" == "build" (
     docker-compose run --rm servidor bash
 ) else if "%command%" == "lint" (
     echo "Running linter with ruff..."
-<<<<<<< HEAD
     ruff check .
 ) else if "%command%" == "lint-fix" (
     echo "Running linter with ruff and fixing errors..."
     ruff check --fix .
-=======
     py -m ruff check .
 ) else if "%command%" == "lint-fix" (
     echo "Running linter with ruff and fixing errors..."
     py -m ruff check --fix .
->>>>>>> sesion2
 ) else (
     echo "Unknown command: %command%"
     echo Usage: make.bat [build^|up^|down^|logs^|shell^|lint^|lint-fix]

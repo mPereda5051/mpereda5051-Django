@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 from django.http import JsonResponse
 from .models import Pizza
 from django.views.decorators.csrf import csrf_exempt
@@ -45,7 +44,5 @@ def pizzas_view(request):
         }, status=201)
 
     return JsonResponse({'error': 'Método no soportado'}, status=405)
-=======
 
 # Create your views here.
->>>>>>> sesion2
