@@ -36,3 +36,5 @@ class Proveedor(models.Model):
 
     def __str__(self):
         return self.nombre
+
+    #mysql -u user_curso -p contraseña: passcurso
