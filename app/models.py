@@ -30,6 +30,9 @@ class Pizza(models.Model):
         return self.nombre
 class Proveedor(models.Model):
     nombre = models.CharField(max_length=100)
-    email =models.EmailField
-    telefono = models.CharField(max_length=12)
+    email =models.EmailField(unique=True)
+    telefono = models.CharField(max_length=20, blank=True)
     fecha_alta = models.DateField(auto_now=True)
+
+    def __str__(self):
+        return self.nombre
