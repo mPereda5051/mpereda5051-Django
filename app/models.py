@@ -28,3 +28,8 @@ class Pizza(models.Model):
 
     def __str__(self):
         return self.nombre
+class Proveedor(models.Model):
+    nombre = models.CharField(max_length=100)
+    email =models.EmailField
+    telefono = models.CharField(max_length=12)
+    fecha_alta = models.DateField(auto_now=True)
